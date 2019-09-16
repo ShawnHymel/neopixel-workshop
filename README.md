@@ -5,6 +5,8 @@ This is a very brief introduction to using the digital, multi-colored LEDs known
 
  Note that this guide assumes you are using the venerable WS2812b LEDs.
 
+### License
+
 The code, text, and images are licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (unless otherwise specified, e.g., in code libraries).
 
 ### Required Parts
@@ -44,7 +46,7 @@ Basic LEDs can usually draw up to 20 mA each (max), and NeoPixels are no differe
 
 To calculate the total power needed for the worst-case scenario, multiply 60 mA times the number of pixels you plan to use:
 
-total_power = 60 mA × num_pixels
+total_current = 60 mA × num_pixels
 
 As an example, if you're using a 30-pixel strip, that gives us a worst-case current draw of 60 mA × 30 = 1800 mA (or 1.8 A). Therefore, make sure you use a 5V power supply that can provide *at least* 1.8 A (more if you want to power other things, like your Arduino board).
 
@@ -67,7 +69,7 @@ By connecting 1 end to 5V and the other to GND, we can create a simple circuit w
 See these pages to learn more:
 
  * [Potentiomenters](https://www.electronics-tutorials.ws/resistor/potentiometer.html)
- * [Voltage Dividers](https://www.electronics-tutorials.ws/resistor/potentiometer.html)
+ * [Voltage Dividers](https://learn.sparkfun.com/tutorials/voltage-dividers/all)
 
 ### Demo 3: Knob-controlled Lights
 
@@ -75,7 +77,7 @@ Connect the NeoPixel strip and potentiometer to the Arduino as shown.
 
 ![Arduino connections to NeoPixels Fritzing](https://raw.githubusercontent.com/ShawnHymel/neopixel-workshop/master/images/demo-03_bb.png)
 
-Upload the code found in [FastLED_Demo_03](https://github.com/ShawnHymel/neopixel-workshop/blob/master/FastLED_Demo_03/FastLED_Demo_01.ino) to your Arduino.
+Upload the code found in [FastLED_Demo_03](https://github.com/ShawnHymel/neopixel-workshop/blob/master/FastLED_Demo_03/FastLED_Demo_03.ino) to your Arduino.
 
 As you adjust the knob, the red channel should fade in and out, making the light warmer or cooler.
 
